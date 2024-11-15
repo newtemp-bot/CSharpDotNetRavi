@@ -31,7 +31,7 @@
     }
     internal class Program
     {
-        static int x = 10;
+        static int z = 10;
         static void display() {
             Console.WriteLine("HelloDisplay");
         }
@@ -41,7 +41,7 @@
             const float PI = 3.14f;//you can also use readonly if dont want to Initialization.
             Console.WriteLine("Hello, World!");
             display();
-            Console.WriteLine(x);
+            Console.WriteLine(z);
             Demo d = new Demo(90);
             Demo d2 = new Demo(80);
             d.z = 50;
@@ -50,9 +50,37 @@
             d.display();
             d2.display();
             d.disread();
-            d.jadu = x;
+            d.jadu = z;
             d.name = "hello";
             Console.WriteLine(d.name);
+
+            //TOstring Ex
+            ToStringEx e = new ToStringEx();
+            e.dis();
+            Console.WriteLine(e.ToString());
+
+            //Equals Method
+            int x = 20;
+            int y = 50;
+            string a = "Hello";
+            string b = "hello";
+            Console.WriteLine(x==y);
+            Console.WriteLine(x.Equals(y));
+            Console.WriteLine(a==b);
+            Console.WriteLine(a.Equals(b));
+
+            //override equals
+            ToStringEx e1 = new ToStringEx();
+            e1.number = 20;
+            e1.n2 = 50;
+            ToStringEx e2 = new ToStringEx();
+            e2.number = 20;
+            e2.n2 = 60;
+
+            string test = null;
+            Console.WriteLine(Convert.ToString(test));
+
+            Console.WriteLine(e1.Equals(e2));
         }
     }
 }
