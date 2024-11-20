@@ -25,6 +25,9 @@ namespace _06OPPsPrograms
             test = obj.test;
             Console.WriteLine("X is = "+test);
         }
+        ~Calculator() {
+            Console.WriteLine("Object Distructor called");
+        }
         public void sum(int x,int y)
         {
             Console.WriteLine("Your Sum is = "+(x+y));
