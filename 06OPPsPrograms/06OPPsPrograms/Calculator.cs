@@ -9,8 +9,8 @@ namespace _06OPPsPrograms
     class Calculator
     {
         public int test = 0;
-        public string s;
-        private static Calculator o;
+        public string s = "Hello";
+        private static Calculator o = null;
         private Calculator() 
         {
             Console.WriteLine("Calaculator Obj Created...");
