@@ -6,11 +6,24 @@ using System.Threading.Tasks;
 
 namespace _06OPPsPrograms
 {
+    interface Demo2
+    {
+        public abstract void math();
+    }
+    public abstract class Demo
+    {
+        public void sum(int a,int b)
+        {
+            Console.WriteLine(a + b);
+        }
+        public abstract void math();
+    }
     class Calculator
     {
         public int test = 0;
         public string s = "Hello";
         private static Calculator o = null;
+        A a = new A(50);
         private Calculator() 
         {
             Console.WriteLine("Calaculator Obj Created...");

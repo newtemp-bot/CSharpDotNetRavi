@@ -56,7 +56,7 @@
             Console.WriteLine(s);
         }
     }
-    internal class Program
+    internal class Program : Demo2
     {
         void display()
         {
@@ -88,6 +88,14 @@
             D d = new D(50);
             d.Method1();
             d.display("Hello how are you?");
+            Program p2 = new Program();
+            //p2.sum(10, 20);
+            p2.math();
+        }
+
+        public void math()
+        {
+            Console.WriteLine("This is interface");
         }
     }
 }
